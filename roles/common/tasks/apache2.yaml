@@ -1,0 +1,6 @@
+---
+- name: Installing apache webserver
+  ansible.builtin.yum:
+    name: httpd
+    state: present
+  notify: Restart web server
