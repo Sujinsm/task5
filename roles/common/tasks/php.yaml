@@ -1,8 +1,0 @@
----
-- name: Installing PHP
-  ansible.builtin.yum:
-    name: "{{ item }}"
-    state: "{{ state }}"
-    update_cache: true
-  notify: Restart web server
-
